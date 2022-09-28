@@ -1,0 +1,174 @@
+.table {
+    margin: 0 auto;
+    max-width: 850px;
+   
+    &__wrapper {
+        margin-top: 55px;
+        max-width: 883px;
+        
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+        padding: 15px 195px 17px 31px;
+        color: $title;
+        font-weight: 600;
+        font-size: 16px;
+        background: #F5F5F7;
+        border-bottom: 1px solid #E1E1E1;
+        border-top: 1px solid #E1E1E1;
+    }
+    &__ul {
+        padding-left: 0;
+    }
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        list-style-type: none;
+        font-size: 16px;
+        color: $text-main;
+        max-width: 883px;
+        height: 56px;
+        padding: 11px 31px 13px 0;
+        border-bottom: 1px solid #E1E1E1;
+       
+        // первый item
+        &__name-first {
+            margin-left: 29px;
+        }
+        
+        &__material-first {
+            margin-left: 9px;
+            
+        }
+        &__size-first {
+            margin-left: 90px;
+            
+        }
+        &__price-first {
+            margin-left: 7px;
+        }
+        // второй item
+        &__name-second {
+            margin-left: 29px;
+        }
+        &__material-second {
+            margin-left: 16px;
+            
+        }
+        &__size-second {
+            margin-left: 101px;
+            
+        }
+        &__price-second {
+            margin-left: 7px;
+        }
+        // третй item
+        &__name-third {
+            margin-left: 27px;
+        }
+        &__material-third {
+            margin-left: -24px;
+            
+        }
+        &__size-third {
+            margin-left: 65px;
+        }
+        
+        // четвертый item
+        &__name-fourth {
+            padding-left: 25px;
+        }
+        &__material-fourth {
+            margin-left: 87px;
+        }
+        &__size-fourth {
+            margin-left: 62px;
+            
+        }
+        &__price-fourth {
+            margin-left: 14px;
+        }
+        &__btn {
+            width: 98px;
+            height: 32px;
+            background: rgba(0, 102, 204, 0.1);
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #0066CC;
+        }
+        &__btn:hover {
+            background: #0066CC;
+            color: #FFFFFF;
+        }
+    }
+}
+
+// мобильная таблица
+.table-mob {
+    display: none;
+    .parket {
+        display: flex;
+        width: 343px;
+        margin-top: 15px;
+        &__left {
+            width: 109px;
+            height: 224px;
+            background: #F5F5F7;
+            border-bottom: 1px solid #E1E1E1;
+            &-column {
+                width: 109px;
+                height: 56px;
+                padding: 15px 0px 17px 15px;
+                border-top: 1px solid #E1E1E1;
+                font-weight: 600;
+                font-size: 16px;
+                color: $text-main;
+            }
+        }
+        &__right {
+            border-bottom: 1px solid #E1E1E1;
+            &-column {
+                width: 234px;
+                height: 56px;
+                padding: 16px 0px 17px 15px;
+                border-top: 1px solid #E1E1E1;
+                font-weight: 400;
+                font-size: 16px;
+                color: $text-main;
+            }
+            &-column.price {
+                display: flex;
+            }
+            .price-btn {
+                width: 98px;
+                height: 32px;
+                background: rgba(0, 102, 204, 0.1);
+                border: none;
+                border-radius: 4px;
+                font-weight: 600;
+                font-size: 14px;
+                color: #0066CC;
+                margin-left: 50px;
+                margin-bottom: 12px;
+            }
+            .price-btn:hover {
+                background: #0066CC;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .table {
+        display: none;
+    }
+    .table-mob {
+        display: block;
+    }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>tz</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav__wrapper">
+            <div><a href="#">Таблица</a></div>
+            <div><a href="#">Форма</a></div>
+            <div><a href="#">Галерея</a></div>
+        </div>
+    </nav>
+
+    <div class="header">
+       <div class="header__wrapper">
+            <div>Главная</div>
+            <div class="header__oblique">/</div>
+            <div>Тестовое задание</div>
+       </div>
+       <h1>Тестовое задание</h1>
+    </div>
+
+    <div class="table">
+        
+        <div class="table__wrapper">
+            <div class="table__head">
+                <p class="name">Название</p>
+                <p class="material">Материал</p>
+                <p class="size">Размер</p>
+                <p class="price">Цена</p>
+            </div>
+            <ul class="table__ul">
+                <li class="list-item">
+                    <p class="list-item__name-first">Стеновой паркет</p>
+                    <p class="list-item__material-first">Ольха</p>
+                    <p class="list-item__size-first">13 × 78 × 300 мм</p>
+                    <p class="list-item__price">52 ₽</p>
+                    <button class="list-item__btn">В корзину</button>
+                </li>
+                <li class="list-item">
+                    <p class="list-item__name-second">Стеновой паркет</p>
+                    <p class="list-item__material-second">Ольха</p>
+                    <p class="list-item__size-second">13 × 78 × 600 мм</p>
+                    <p class="list-item__price-second">112 ₽</p>
+                    <button class="list-item__btn">В корзину</button>
+                </li>
+                <li class="list-item">
+                    <p class="list-item__name-third">Доска для пола, сорт А</p>
+                    <p class="list-item__material-third">Лиственница</p>
+                    <p class="list-item__size-third">27 × 134 × 2000 мм</p>
+                    <p class="list-item__price-third">1062 ₽</p>
+                    <button class="list-item__btn">В корзину</button>
+                </li>
+                <li class="list-item">
+                    <p class="list-item__name-fourth" id="name-fourth">Вагонка</p>
+                    <p class="list-item__material-fourth">Термо-абаш</p>
+                    <p class="list-item__size-fourth">19 × 90 × 2000 мм</p>
+                    <p class="list-item__price-fourth">1009 ₽</p>
+                    <button class="list-item__btn">В корзину</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="table-mob">
+        <div class="parket">
+            <div class="parket__left">
+                <div class="parket__left-column">Название</div>
+                <div class="parket__left-column">Материал</div>
+                <div class="parket__left-column">Размер</div>
+                <div class="parket__left-column">Цена</div>
+            </div>
+            <div class="parket__right">
+                <div class="parket__right-column">Стеновой паркет</div>
+                <div class="parket__right-column">Ольха</div>
+                <div class="parket__right-column">13 × 78 × 300 мм</div>
+                <div class="parket__right-column price">
+                    <p>52 ₽</p>
+                    <button class="price-btn">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="parket">
+            <div class="parket__left">
+                <div class="parket__left-column">Название</div>
+                <div class="parket__left-column">Материал</div>
+                <div class="parket__left-column">Размер</div>
+                <div class="parket__left-column">Цена</div>
+            </div>
+            <div class="parket__right">
+                <div class="parket__right-column">Стеновой паркет</div>
+                <div class="parket__right-column">Ольха</div>
+                <div class="parket__right-column">13 × 78 × 300 мм</div>
+                <div class="parket__right-column price">
+                    <p>52 ₽</p>
+                    <button class="price-btn">В корзину</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <form action="#" class="form" id="form-validate">
+        <div class="form__title">Заказать проект</div>
+
+        <div class="form__input">
+            <p>Название</p>
+            <p class="name-warning hide">Не меньше двух симоволов</p>
+            <input name="name" class="form__name" type="text" maxlength="20">
+        </div>
+
+        <div class="form__details">
+            <div class="price">
+                <p>Стоимость</p>
+                <div class="view-price">
+                    <span id="rangeValue">20 000 000</span>
+                    <input  id="rng" name="rng" type="range" min="0" max="100000" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+                </div>
+            </div>
+
+            <div class="area">
+                <p>Площадь</p>
+                <div class="area__input">
+                    <button class="btn-minus">
+                        <div class="area__minus"></div>
+                    </button>
+
+                        <!-- <input  name="area" type="number" placeholder="" class="input-area" value=""> -->
+                    <div class="wrapper-area-span"><span class="area-span">100</span>м<sup>2</sup></div>
+                    
+                    <button class="btn-plus">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="finishing">
+                <p class="finishing__title">Отделка</p>
+                <div class="finishing__wrapper">
+                    <label class="switch">
+                        <input  type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Вайтбокс</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form__contact">
+            <div class="form__contact-phone">
+                <p>Телефон</p>
+                <input  name="phone" type="tel" maxlength="12">
+            </div>
+            <div class="form__contact-email">
+                <p>Почта</p>
+                <input  name="email" type="email">
+            </div>
+        </div>
+
+        <div class="form__file">
+            <p class="form__file-title">Приложить файлы</p>
+            <div class="form__file-download">
+                <label>Кликните или перенесите файлы в эту область.Только JPG, до 1 Мб</label>
+                <input type="file" name="file" class="input-file">
+            </div>
+        </div>
+
+        <div class="form__other">
+            <div class="form__other-comfort">
+                <p>Удобства</p>
+                <select class="select" id="" value="any">
+                    <option value="any">любые</option>
+                    <option value="some">Вот такой</option>
+                </select>
+                <img src="./img/icons/select.png" alt="select">
+            </div>
+            <div class="form__other-password">
+                <p>Пароль</p>
+                <input  name="password" type="password">
+                <img src="./img/icons/eyeoff.svg" alt="select">
+            </div>
+        </div>
+
+        <div class="form__wishes">
+            <p>Пожелания</p>
+            <input type="text" placeholder="укажите через запятую">
+        </div>
+
+        <button type="submit" class="form__button">Отправить заявку</button>
+    </form>
+
+    <div class="gallery">
+        <div class="gallery__filters">
+           <button>Бани</button>
+           <button>Сауны</button>
+           <button>Хаммамы</button>
+           <button>Хаммамы</button>
+        </div>
+        <div class="gallery__photo">
+
+            <div class="left-arrow">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+            </div>
+
+            <div class="gallery__photo-img">
+                <img  src="./img/image1.png" alt="img">
+            </div>
+            <div class="gallery__photo-img">
+                <img src="./img/image2.png" alt="img">
+            </div>
+            <div class="gallery__photo-img">
+                <img src="./img/image3.png" alt="img">
+            </div>
+            <div class="gallery__photo-img">
+                <img src="./img/image4.png" alt="img">
+            </div>
+            <div class="gallery__photo-img">
+                <img src="./img/image5.png" alt="img">
+            </div>
+            <div class="gallery__photo-img">
+                <img src="./img/image6.png" alt="img">
+            </div>
+            <div class="gallery__photo-img">
+                <img src="./img/image7.png" alt="img">
+            </div>
+            <div class="gallery__photo-img">
+                <img src="./img/image8.png" alt="img">
+            </div>
+
+            <div class="right-arrow">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+            </div>
+
+        </div>
+        <div class="gallery__dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    
+
+
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

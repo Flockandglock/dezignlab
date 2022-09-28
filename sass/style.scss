@@ -1,0 +1,26 @@
+@import 'variables';
+
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@import 'blocks/navbar/nav';
+@import 'blocks/header/header';
+@import 'blocks/table/table';
+@import 'blocks/form/form';
+@import 'blocks/gallery/gallery';
+

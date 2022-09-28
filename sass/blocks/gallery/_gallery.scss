@@ -1,0 +1,177 @@
+.gallery {
+    &__filters {
+        margin: 0 auto;
+        width: 320px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            min-width: 70px;
+            height: 40px;
+            background: #F2F4F7;
+            border-radius: 10px;
+            border: none;
+        }
+        button:hover {
+            background: #0066CC;
+            color: #FFFFFF;
+        }
+    }
+    // блок с фотками 
+    &__photo {
+        position: relative;
+        margin: 16px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1800px;
+        &-img {
+            width: 430px;
+            margin-top: 24px;
+        }
+        .left-arrow {
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 44%;
+            left: 40px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            .item1 {
+                position: absolute;
+                top: 50%;
+                left: 30px;
+                width: 20px;
+                height: 2px;
+                background: #0066CC;
+            }
+            .item2 {
+                position: absolute;
+                top: 45%;
+                left: 28px;
+                width: 15px;
+                height: 2px;
+                background: #0066CC;
+                transform: rotate(-35deg);
+            }
+            .item3 {
+                position: absolute;
+                top: 55%;
+                left: 28px;
+                width: 15px;
+                height: 2px;
+                background: #0066CC;
+                transform: rotate(35deg);
+            }
+        }
+        .left-arrow:hover {
+            background: #0066CC;
+            .item1 {
+                background: #FFFFFF;
+            }
+            .item2 {
+                background: #FFFFFF;
+            }
+            .item3 {
+                background: #FFFFFF;
+            }
+        }
+        
+        .right-arrow {
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 44%;
+            right: 40px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            .item1 {
+                position: absolute;
+                top: 50%;
+                left: 30px;
+                width: 20px;
+                height: 2px;
+                background: #0066CC;
+            }
+            .item2 {
+                position: absolute;
+                top: 55%;
+                right: 28px;
+                width: 15px;
+                height: 2px;
+                background: #0066CC;
+                transform: rotate(-35deg);
+            }
+            .item3 {
+                position: absolute;
+                top: 45%;
+                right: 28px;
+                width: 15px;
+                height: 2px;
+                background: #0066CC;
+                transform: rotate(35deg);
+            }
+        }
+        .right-arrow:hover {
+            background: #0066CC;
+            .item1 {
+                background: #FFFFFF;
+            }
+            .item2 {
+                background: #FFFFFF;
+            }
+            .item3 {
+                background: #FFFFFF;
+            }
+        }
+    }
+    &__photo:hover {
+        .right-arrow {
+            display: block;
+        }
+        .left-arrow {
+            display: block;
+        } 
+    }
+    // хлебные крошки 
+    &__dots {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 240px;
+        height: 16px;
+        margin: 44px auto;
+        .dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #E6E6E6;
+            cursor: pointer;
+        }
+        .dot:hover {
+            background: #0066CC;
+        }
+    }
+}
+
+// медиа 
+@media (max-width: 426px) {
+    .gallery {
+        &__photo {
+            margin-top: 5px;
+        }
+        &__photo-img {
+            width: 166px;
+            img {
+                width: 100%;
+            }
+            
+        }
+    }
+}
